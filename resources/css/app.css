@@ -1,0 +1,6 @@
+@import 'bootstrap';
+@import './style';
+@import './mediaQuery';
+@import './styleAldo';
+@import './styleLuis';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';

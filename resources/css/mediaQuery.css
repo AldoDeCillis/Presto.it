@@ -1,0 +1,91 @@
+@media screen and (max-width: 800px) {
+    .listCategories  {
+    display: none;
+    }
+  }
+
+ 
+  @media screen and (max-width: 800px) {
+    .imgWelcome {
+        height: 50vh;
+        width: 80vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+  }
+
+/*   @media screen and (max-width: 800px) {
+    .welcome-button {
+       width: 30vw;
+       height: 7vh;
+        margin-left: 50px;
+    }
+  } */
+
+  @media screen and (max-width: 990px) {
+    .colPresto {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .colPresto>h2 {
+        font-size: 70px;
+        
+        
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .colPresto>h4 {
+        padding-top: 35px;
+        font-size: 37px;
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .colPresto>h6 {
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .colPresto>h6 {
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .screen_container,.vantaggi,.ragioni{
+        font-size: 14px;
+        
+  }
+}
+@media screen and (max-width: 400px) {
+    .screen_container,.vantaggi,.ragioni{
+        font-size: 13px;
+        
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .NavLingue {
+     background-color: #213256;
+     width: 30vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .CategoriesStyle {
+     background-color: #E99667;
+     width: 30vw;
+  }
+}
+

@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Quicksand:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+.main_font {
+    font-family: 'Allerta Stencil', sans-serif;
+}
+header {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #3d4d63;
+}
+:root {
+    --m-color: #213256;
+    --s-color: #3d4d63;
+    --t-color: #e99667;
+    --a-color: #e96658;
+}
+.m_font {
+    color: var(--m-color);
+}
+.s_font {
+    color: var(--s-color);
+}
+.t_font {
+    color: var(--t-color);
+}
+.a_font {
+    color: var(--a-color);
+}
+.m_background {
+    background: var(--m-color);
+}
+.m_background_opacity {
+    background: #213256c4;
+}
+.s_background {
+    background: var(--s-color);
+}
+
+.t_background {
+    background: var(--t-color);
+}
+
+.a_background {
+    background: var(--a-color);
+}
+.show_carusel_container {
+    height: 75vh;
+    width: 100%;
+}
+.thumbnail_container {
+    height: 20%;
+}
+.card-item {
+    width: 15rem;
+    height: 17rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+    border: 1px solid #b7b5b3;
+}
+.card-item:hover {
+  
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-color: #3d4d63;
+    border: 1px solid #e99667;
+}
+.card-item img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+}
+.card_custom h2{
+    font-size: 1.5rem;
+ font-weight: 500; 
+ font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+
+}
+.card_custom:hover h2{
+    font-size: 1.5rem;
+ font-weight: 500; 
+ font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+ color: #3d4d63 ;
+}
+
+.card_custom p {
+    font-weight:500 ;
+}
+.card_custom:hover p {
+    font-weight:500;
+    inset: auto auto 10% 0px;
+    color: #3d4d63;
+    
+}
+.card-item h3 {
+    font-size: 1.1rem;
+   
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    inset: auto auto 0% 0px;  
+}.card-item:hover h3 {
+    font-weight: initial ;
+    opacity: 1;
+    inset: auto auto 40% 0px;
+    font-size: 1.1rem;
+    color:white;
+
+    
+    
+}
+.card-item:hover h4 {
+    opacity: 1;
+    inset: auto auto 0px 50px;
+    color: #e99667;
+ 
+}
+.card-item h4 {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    inset: auto auto 0% 0px;
+    bottom: 0;
+}
+.card-item h5 {
+    font-weight: 400;
+    font-size: 1rem;
+    inset: auto auto 0% 0px;
+
+
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.card-item:hover h5 {
+   font-weight: inherit;
+
+    font-size: 1rem;
+
+    transition: 0.5s;
+    opacity: 1;
+    width: 100%;
+    inset: auto auto 91% 0px;
+    color: #e96658;
+    font-weight: bold;
+    
+
+
+}
+
+.card-item:hover img {
+    opacity: 0.15;
+    transform: scale(1.1);
+}
+
+.card_custom {
+    border: none;
+}
+.card_revisor_custom{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.welcome-button {
+    text-decoration: none;
+    background-color: #e99667;
+    color: white;
+    border: none !important;
+    transition: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.welcome-button:hover {
+    box-shadow: 2px 2px 2px #484949;
+    background-color: #f0b28e;
+    transform: scale(1.05);
+}
+
+/*swiper*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .swiper-slide {
+    background-size: cover;
+    background-position: center;
+} */
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+}
+
+.mySwiper {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.mySwiper .swiper-slide:hover {
+
+    opacity: 2;
+
+}
+
+
+.becomeRevisor {
+    border: 2px solid rgb(210, 207, 207);
+    border-radius: 10px;
+
+
+}
+
+.form-control_becomeRevisor {
+    border: 1px solid #566a86;
+
+    transition: 0.5s;
+}
+
+.form-control_becomeRevisor:hover {
+    border: 1, 5px solid #213256;
+    transform: scale(1.05);
+
+
+
+
+}
+
+.button_becomeRevisor {
+    text-decoration: none;
+    color: #213256;
+    background-color: #e99667;
+    border: none !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button_becomeRevisor:hover {
+
+    transition-duration: 0, 3s;
+    font-family: 'Quicksand', sans-serif;
+    
+    background-color: #f0b28e;
+    color: #3d4d63;
+    transform: scale(1.03);
+}
+
+.form-control-auth {
+    border: 1px solid #5d7495;
+    transition: 0.5s;
+}
+
+.form-control-auth:hover {
+    border: 1, 5px solid #213256;
+    transform: scale(1.03);
+
+}
+
+.button_auth {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e99667;
+    border: none !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button_auth:hover {
+    transition-duration: 0.3s;
+    font-family: 'Quicksand', sans-serif;
+    
+    background-color: #f0b28e;
+    color: #3d4d63;
+    transform: scale(1.03);
+}
+
+.form-control_insertionCreate {
+    border: 1px solid #4d617e;
+    transition: 0.5s;
+}
+
+.form-control_insertionCreate:hover {
+    border: 1, 5px solid #213256;
+    transform: scale(1.03);
+}
+
+.button_insertionCreate {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e99667;
+    border: none !important;
+    text-decoration: none;
+    transition: 0.5s;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.button_insertionCreate2 {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--a-color);
+    border: none !important;
+    text-decoration: none;
+    transition: 0.5s;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.button_insertionCreate:hover {
+    transition-duration: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+   
+    background-color: #f0b28e;
+    color: #3d4d63;
+    transform: scale(1.05);
+}
+.button_insertionCreate2:hover {
+    transition-duration: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #3d4d63;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.button_show {
+    text-decoration: none;
+    color: #213256;
+    background-color: #e99667;
+    border: none !important;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button_show:hover {
+    transition-duration: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+    
+    background-color: #f0b28e;
+    color: #3d4d63;
+    transform: scale(1.05);
+}
+
+.button_back {
+    text-decoration: none;
+    color: #213256;
+    background-color: #e1c41f;
+    border: none !important;
+    transition: 0.5s;
+}
+
+.button_back:hover {
+    text-decoration: none;
+    color: #213256;
+    background-color: #e4d26ed2;
+    transform: scale(1.05);
+    border: none !important;
+}
+
+
+.navbar {
+    background-color: #213256;
+}
+
+.navbar .navbar-shortcut {
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+
+.navbar .navbar-shortcut.active,
+.navbar .navbar-shortcut:hover {
+    font-size: 15.5px;
+} 
+
+.title_motivational {
+    background-color: #e99767a7;
+    width: fit-content;
+}
+.CategoriesStyle {
+    background-color: #E99667;
+    width: 10vw;
+ }
+
+ .NavLingue {
+    background-color: #213256;
+    width: 10vw;
+ }
