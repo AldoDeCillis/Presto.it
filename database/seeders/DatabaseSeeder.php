@@ -15,10 +15,18 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         DB::table('users')->insert([
-            'name' => 'admin',
-            'email' => 'admin@admin.it',
-            'password' => bcrypt('12345678'),
-            'is_revisor' => true,
+            [
+                'name' => 'admin',
+                'email' => 'admin@admin.it',
+                'password' => bcrypt('12345678'),
+                'is_revisor' => true,
+            ],
+            [
+                'name' => 'admin2',
+                'email' => 'admin2@admin.it',
+                'password' => bcrypt('12345678'),
+                'is_revisor' => false,
+            ],
         ]);
 
         $categories = [
